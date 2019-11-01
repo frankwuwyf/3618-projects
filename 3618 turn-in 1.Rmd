@@ -1,0 +1,15 @@
+---
+title: "3618 turn-in 1"
+output: html_notebook
+---
+
+Place an R code file or R markdown file with a script that creates two row vectors, each with 6 entries,and then joins them together into a matrix with 2 rows and 6 columns.  Label the rows with names of Halloween monsters and label the columns with types of candy.
+
+```{r}
+rownames <- c("Vampire", "Zombie")
+colnames <- c("Taffy", "Chocolate", "Lollipop", "Bubble Gum", "Candy Stick", "Gummy")
+dim <- list(rownames,colnames)
+Halloween <- matrix(c(1:12), nrow=2, ncol=6, dimnames = dim)
+Halloween
+```
+
